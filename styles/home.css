@@ -7,16 +7,20 @@
 
 /* BASE STYLES */
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  min-height: 100vh;
-  margin: 0;
-  background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("../assets/freelynk_background.png") no-repeat center center;
+  background-image: url("../assets/freelynk_background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center; /* or center top / left top depending on preference */
   background-size: cover;
+  background-attachment: fixed;
+
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.hero, main, section {
+  background-color: transparent; /* Make sure nothing covers the background */
 }
 
 
@@ -30,14 +34,14 @@ main, header, footer {
 /* HEADER */
 header {
   padding: 1rem 2rem;
-  background-color: rgba(82, 23, 192, 0.6);
+  background-color: rgba(25, 72, 228, 0.6);
   display: flex;
-  justify-content: center; /* centers logo horizontally */
+  justify-content: center; 
   align-items: center;
 }
 
 .logo {
-  width: 180px;
+  width: 300px;
 }
 
 /* MAIN SECTION */
@@ -57,7 +61,7 @@ main {
   z-index: 1;
   color: white;
   max-width: 700px;
-  background-color: rgba(0,0,0,0.4); /* subtle dark overlay behind text */
+  background-color: rgba(0, 0, 0, 0.7); 
   padding: 2rem;
   border-radius: 15px;
 }
@@ -106,5 +110,5 @@ footer {
   padding: 1rem;
   font-size: 0.8rem;
   color: #cccccc;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
 }
