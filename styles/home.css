@@ -1,0 +1,110 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../assets/freelynk_background.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main, header, footer {
+  position: relative;
+  z-index: 1; /* ensures content appears above overlay */
+}
+
+
+
+/* HEADER */
+header {
+  padding: 1rem 2rem;
+  background-color: rgba(82, 23, 192, 0.6);
+  display: flex;
+  justify-content: center; /* centers logo horizontally */
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+}
+
+/* MAIN SECTION */
+main {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  color: white;
+  max-width: 700px;
+  background-color: rgba(0,0,0,0.4); /* subtle dark overlay behind text */
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #91aaff;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+/* CTA BUTTONS */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #04d2f7;
+  color: #212121;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5477e7;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.4);
+}
